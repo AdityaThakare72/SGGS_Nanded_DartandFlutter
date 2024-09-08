@@ -1,0 +1,23 @@
+class Person {
+  // Super class
+  var name;
+  var age;
+  void show() {
+    print('Values: $name and $age');
+  }
+}
+
+class Human extends Person {
+  // Sub-class
+  var weight;
+  Human(String n, int a, double w) {
+    name = n;
+    age = a;
+    weight = w;
+  }
+}
+void main() {
+  var obj = new Human('Kiran', 56, 67.89);
+  obj.show();
+}
+
